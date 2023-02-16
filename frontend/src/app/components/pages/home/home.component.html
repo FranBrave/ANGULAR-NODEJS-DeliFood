@@ -1,3 +1,5 @@
+<app-search></app-search>
+<app-tags></app-tags>
 <ul>
   <li *ngFor="let food of foods">
     <a routerLink="/food/{{ food.id }}">
@@ -27,7 +29,7 @@
 
           <div class="cook-time">
             <span>🕒</span>
-            {{ food.cookTime }}
+            {{ food.cookTime }}''
           </div>
         </div>
 

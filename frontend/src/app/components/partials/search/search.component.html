@@ -1,0 +1,10 @@
+<div>
+  <input
+    #s
+    type="text"
+    placeholder="¿Qué quieres comer hoy?"
+    (keyup.enter)="searcher(s.value)"
+    [value]="search"
+  />
+  <button (click)="searcher(s.value)">Buscar</button>
+</div>
