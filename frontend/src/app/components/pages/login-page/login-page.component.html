@@ -17,6 +17,12 @@
       ></input-text>
 
       <default-button text="Login"></default-button>
+      <div class="register">
+        ¿No tiene una cuenta? &nbsp;
+        <a routerLink="/register" [queryParams]="{ returnUrl: returnUrl }"
+          >Regístrese aquí</a
+        >
+      </div>
     </form>
   </div>
 </div>

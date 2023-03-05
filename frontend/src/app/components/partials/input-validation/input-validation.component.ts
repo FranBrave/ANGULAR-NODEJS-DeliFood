@@ -4,6 +4,8 @@ import { AbstractControl } from '@angular/forms';
 const VALIDATORS_MESSAGES: any = {
   required: 'Este campo no puede estar vacío',
   email: 'El email no es válido',
+  minlength: 'El campo es demasiado corto',
+  notMatch: 'Las contraseñas no coinciden'
 }
 
 @Component({
