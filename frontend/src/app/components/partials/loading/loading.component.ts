@@ -9,17 +9,15 @@ import { LoadingService } from 'src/app/services/loading.service';
 export class LoadingComponent implements OnInit {
 
   isLoading!: boolean;
-
   constructor(loadingService: LoadingService) {
     loadingService.isLoading.subscribe((isLoading) => {
       this.isLoading = isLoading;
     });
 
-    loadingService.showLoading();
+
    }
 
   ngOnInit(): void {
-
   }
 
 }
