@@ -16,7 +16,6 @@ app.use(cors({
     origin:["http://localhost:4200"]
 }));
 
-
 app.use("/api/foods", foodRouter);
 app.use("/api/users", userRouter);
 app.use("/api/orders", orderRouter);
